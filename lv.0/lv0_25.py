@@ -1,2 +1,6 @@
-def solution(my_string):
-    return my_string[::-1]
+def solution(array):
+    array.sort()
+    answer = len(array) // 2
+    if len(array) % 2 == 1:
+        return array[answer]
+    return ((array[answer - 1] + array[answer]) / 2) 
